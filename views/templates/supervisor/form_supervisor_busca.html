@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  {$head}
+  <body id="page5">
+    <div id="main">
+
+
+      <!--          inicio do Conteudo-->    
+
+<div class="painel_basico">
+  <div class="titulos_paginas" id="supervisor">
+    <h2>supervisor</h2>
+  </div> 
+  <div>    
+    <div class="clear"></div>
+    <fieldset>
+      <legend>Buscar</legend>
+      <input type="text" name="colaborador_busca_texto" id="supervisor_busca_texto" value="fa"/>
+      <input type="button" class="btn_padrao" value="buscar" 
+             id="btn_supervisor_buscar" 
+             name="btn_supervisor_buscar"
+             onclick="busca_supervisor()"/>
+    </fieldset>
+  </div> 
+  <div class="clear"></div>
+  <div class="alinha_esquerda">    
+    <button onclick="btn_novo_supervisor_click()" class="btn_padrao">Novo supervisor</button>
+  </div>
+  <div id="grid_resultados" class="box_resultados_100">    
+    <div class="clear"></div>
+    <table id="lista_retorno" name="lista_retorno" class="basicTable">
+      <thead>
+        <tr>
+          <th>cod</th>
+          <th>nome</th>
+          <th>Ação</th>
+        </tr>
+      </thead>      
+      <tbody>
+        {include file="supervisor/grid_supervisor.tpl" supervisor_lista=$supervisor_lista}
+      </tbody>      
+    </table>
+  </div>
+  <div class="clear"></div>
+</div>
+      
+  <!--          Fim do Conteudo-->
+
+    </div>
+  </body>
+</html>

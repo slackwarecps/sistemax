@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  {$head}
+  <body>
+    {$header}
+    <div class="container">
+      <!--          inicio do Conteudo-->    
+      <div class="starter-template">
+        <h1>Titulo</h1>
+
+        <fieldset class="form-inline">
+          <legend>Buscar</legend>
+
+          <div class="form-group col-6">
+            <label class="sr-only" for="colaborador_busca_texto">Email address</label>    
+            <input type="text" id="xuxu_busca_texto" class="form-control"name="colaborador_busca_texto"  placeholder="Escreva algo para a busca"/>
+
+          </div>          
+
+
+          <input type="button" class="btn btn-default" value="buscar" 
+                 id="btn_xuxu_buscar" 
+                 name="btn_xuxu_buscar"
+                 onclick="busca_xuxu()"/>
+
+        </fieldset>      
+        
+  <div class="row-offcanvas">    
+    <br>
+    <button onclick="btn_novo_xuxu_click()" class="btn btn-default">Novo {$entidade}</button>   
+  </div>        
+ <br>    
+        <table name="lista_retorno" class="table-hover table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>cod</th>
+              <th>nome</th>
+              <th>Ação</th>
+            </tr>
+          </thead>      
+          <tbody>
+            {include file="xuxu/grid_xuxu.tpl" xuxu_lista=$xuxu_lista}
+          </tbody>      
+        </table>                
+
+      </div>
+      <!--          Fim do Conteudo-->
+    </div><!-- /.container -->      
+  </body>
+</html>

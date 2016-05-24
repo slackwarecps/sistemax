@@ -1,0 +1,182 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <style>
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+	border-bottom: 1px solid #ccc;
+	}
+
+ul li {
+	position: relative;
+	}
+li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+	}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+
+li:hover ul, li.over ul { 
+	display: block; 
+	}
+
+    </style>
+    
+  </head>
+<body>
+<script>
+var $confirm;
+var callBack;
+var iconStyle = '<span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 50px 0;"></span>';
+var messageStyleStart = '<span align="center" style="font-family:arial, verdana, sans-serif;font-size:9.3pt;">';
+var messageStyleEnd = '</span>';
+
+
+$(document).ready(function(){
+    $('#confirmDialog').dialog({
+            autoOpen: false,
+            modal: true
+    });
+
+
+    //jquery confirm box -- the general alert box
+    $confirm = $('<div  style="vertical-align:middle;"></div>')
+    .html('This Message will be replaced!')
+    .dialog({
+        autoOpen: false,
+        modal: true,
+        position: 'top',
+        height:300,
+        width: 460,
+        modal: true,
+        buttons: {
+            Ok   : function() {
+                $( this ).dialog( "close" );
+                if(null != callBack)
+                    callBack.success();
+            },
+            Cancel: function() {
+                $( this ).dialog( "close" );
+                if(null != callBack)
+                    callBack.fail();
+            }
+        }
+    }); 
+
+});
+
+    function showConfirm(message,callBackMe,title){
+    callBack = null;
+    $confirm.html(""); // work around
+    $confirm.html(iconStyle + messageStyleStart +message + messageStyleEnd);
+    if(title =='undefined'|| null ==title)
+        $confirm.dialog( "option", "title", "Please confirm" );
+    else
+        $confirm.dialog( "option", "title", title);
+    var val = $confirm.dialog('open');
+    callBack = callBackMe;
+    // prevent the default action
+    return true;
+}
+
+    // Now for calling the function 
+// create a Javascript/jSOn callback object 
+
+var callMeBack = {
+                    success: function()
+                            {   // call your yes function here                                  
+                                clickedYes();
+                                return;
+                            },
+                    fail: function (){
+                                // call your 'no' function here
+                                 clickedNo();
+                                return ;
+                            }
+                };
+
+
+    showConfirm("Do you want to Exit ?<br/>",callMeBack,"Please Answer");  
+</script>
+<div id="container" style="width:550px;margin: 0px auto;">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">Main Title of Web Page</h1></div>
+
+<div id="menu" style="background-color:#FFD700;height:200px;width:150px;float:left;">
+  <input type="button" value="test" name="test" onclick='showConfirm("Do you want to Exit ?<br/>",callMeBack1,"Please Answer")'/>
+<ul> 
+    <li><a href="#">Home@</a></li> 
+    <li><a href="#">About@</a> 
+      <ul> 
+        <li><a href="#">History</a></li> 
+        <li><a href="#">Team</a></li> 
+        <li><a href="#">Offices</a></li> 
+      </ul> 
+    </li> 
+    <li><a href="#">Services</a> 
+      <ul> 
+        <li><a href="#">Web Design</a></li> 
+        <li><a href="#">Internet 
+            Marketing</a></li> 
+        <li><a href="#">Hosting</a></li> 
+        <li><a href="#">Domain Names</a></li> 
+        <li><a href="#">Broadband</a></li> 
+      </ul> 
+    </li>
+
+    <li><a href="#">Contact Us</a> 
+      <ul> 
+        <li><a href="#">United Kingdom</a></li> 
+        <li><a href="#">France</a></li> 
+        <li><a href="#">USA</a></li> 
+        <li><a href="#">Australia</a></li> 
+      </ul> 
+    </li> 
+  </ul>
+  
+
+</div>
+
+<div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+Content goes here
+
+<a href="#" onclick="return myconfirm()">Confirm</a>
+<script>
+function myconfirm()
+{
+    if(confirm('Are You Sure ...'))
+        return true;
+    return false;
+}
+</script>
+
+
+</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+Copyright © W3Schools.com</div>
+
+</div>
+
+</body>
+</html>

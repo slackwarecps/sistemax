@@ -1,0 +1,27 @@
+/* 
+    Document   : custom
+    Created on : 09/08/2013, 15:33:27
+    Author     : ADM
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.container.pagina{
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+#bobesponja{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    background-image: url('../imagens/bob-esponja.jpg');
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    border-radius: 5%;
+}
+/*div{border:dotted green 1px;}*/

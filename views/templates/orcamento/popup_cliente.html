@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <style>
+      tr{cursor: pointer}
+    </style>
+    <script> 
+
+      $(document).ready(function(){
+       
+        $("td").on('click',td_click);        
+        
+        $("#btn_buscar_texto").on('click',function(){
+          $("#tabela_generica tbody").html('<tr><td colspan="2"><img src="files/imagens/ui-anim_basic_16x16.gif"> Aguarde pesquisando...</td></tr>');
+          $("#tabela_generica tbody").load('/cliente/busca_cliente_generico', {texto:$("#texto_busca").val()},function(){                     
+            $("td").on('click',td_click);                
+          });
+        });
+        
+        
+        $("td").on('click',td_click);
+        //Inicializa a tabela
+        $("#tabela_generica").data("linha_selecionada", -1);     
+      }); 
+      
+      //Evento do click do td
+      function td_click(){
+        var x = $(this).parent("tr").attr('id');
+        var xnome = $(this).parent("tr").attr('xnome');
+          
+        $("#tabela_generica").data("linha_selecionada", x);
+        $("#tabela_generica").data("nome_selecionado", xnome);
+          
+        $("tr").css('color', 'black');
+        $(this).parent("tr").css('color', 'red');
+        $("#sel_linha").text('Seleção: '+$("#tabela_generica").data("linha_selecionada"));      
+      }   
+    </script>      
+  </head>
+  <body>
+    <div>Nome do Cliente: <input type="text" name="texto_busca" id="texto_busca" value="fa" />
+      <input type="button" value="Buscar" name="btn_buscar_texto" id="btn_buscar_texto"/>      
+    </div>
+    <div class="grid">
+      <table border="1" id="tabela_generica" width="100%">
+        <thead>
+          <tr>
+            <th>cod</th>
+            <th>nome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>    
+            <td colspan="2">Faça uma busca</td>    
+          </tr>
+        </tbody>
+      </table>
+      <span id="sel_linha">Seleção: Nenhum Item Selecionado</span>
+    </div>
+
+  </body>
+</html>

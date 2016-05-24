@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="{$BOOTSTRAP_DIST}../../assets/ico/favicon.png">
+<!--  <link rel="shortcut icon" href="{$path_image}/favicon.ico" />-->
+  <title>{$title}</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{$BOOTSTRAP_DIST}/css/bootstrap.css" rel="stylesheet">
+ 
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="{$BOOTSTRAP_DIST}../../assets/js/html5shiv.js"></script>
+    <script src="{$BOOTSTRAP_DIST}../../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+  {if $smarty.const.PRODUCAO}
+  <meta name="google-site-verification" content="{$google_verification|default:''}" />
+  {/if}
+  {section name=i loop=$css}
+  <link href="{$css[i]}" rel="stylesheet" type="text/css" />
+  {/section}
+
+  {section name=i loop=$js}
+  <script type="text/javascript" src="{$js[i]}"></script>
+  {/section}    
+</head>

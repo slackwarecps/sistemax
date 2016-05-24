@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  {$head}
+  <body>
+    {$header}
+    <div class="container">
+      <!--          inicio do Conteudo-->    
+      <div class="starter-template">
+        <h1>Titulo</h1>  
+        <fieldset class="form-inline">
+          <legend>Buscar</legend>
+
+          <div class="form-group col-6">
+            <label class="sr-only" for="lixo_busca_texto">Texto:</label>    
+            <input type="text" name="lixo_busca_texto" id="lixo_busca_texto" class="form-control"   placeholder="Escreva algo para a busca"/>
+
+          </div>          
+
+
+          <input type="button" class="btn btn-default" value="buscar" 
+             id="btn_lixo_buscar" 
+             name="btn_lixo_buscar"
+             onclick="busca_lixo()"/>
+
+        </fieldset>      
+    
+  
+  <div class="alinha_esquerda">
+    <br> 
+    <a href='/sistemax/lixo/novo_lixo'  class="btn btn-default">Novo lixo</a>
+  </div>
+  <br>
+  
+        <table name="lista_retorno" class="table-hover table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>cod</th>
+              <th>nome</th>
+              <th>Ação</th>
+            </tr>
+          </thead>      
+          <tbody>
+        {include file="lixo/grid_lixo.tpl" lixo_lista=$lixo_lista}
+      </tbody>      
+        </table>   
+      </div>
+      <!--          Fim do Conteudo-->
+    </div><!-- /.container -->      
+  </body>
+</html>

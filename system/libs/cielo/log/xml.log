@@ -1,0 +1,820 @@
+***********************************************
+2013-09-16 17:11:31:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="b4ad0b9d3bcd1d62cfd199697589cf52" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-16 17:11:31:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="b4ad0b9d3bcd1d62cfd199697589cf52" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1006993069089D871001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-16 17:11:32:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="6a3b90f0796faee51d97a5d4f4807e38" versao ="1.2.0">
+<tid>1006993069089D871001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>4012001038443336</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>sadasd</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>3</numero>
+      <valor>127500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-16T17:11:32</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-16 17:11:33:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="6a3b90f0796faee51d97a5d4f4807e38" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1006993069089D871001</tid>
+  <pan>/jABHz8NXlfMNrD+YeOs3D+nd1cEfBOnW7yfO3IaWpc=</pan>
+  <dados-pedido>
+    <numero>3</numero>
+    <valor>127500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-16T17:13:03.107-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-16T17:13:03.118-03:00</data-hora>
+    <valor>127500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transa��o autorizada</mensagem>
+    <data-hora>2013-09-16T17:13:03.123-03:00</data-hora>
+    <valor>127500</valor>
+    <lr>00</lr>
+    <arp>123456</arp>
+    <nsu>564615</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2013-09-16T17:13:03.188-03:00</data-hora>
+    <valor>127500</valor>
+  </captura>
+</transacao>
+
+
+***********************************************
+2013-09-16 17:12:07:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="a5748a91d309d08b4f9566fdb269734b" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-16 17:12:08:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="a5748a91d309d08b4f9566fdb269734b" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1006993069089D881001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-16 17:12:08:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="1c8682876fbce154d928e82205cede62" versao ="1.2.0">
+<tid>1006993069089D881001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>4012001038443336</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>sadasd</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>4</numero>
+      <valor>127500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-16T17:12:08</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-16 17:12:09:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="1c8682876fbce154d928e82205cede62" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1006993069089D881001</tid>
+  <pan>/jABHz8NXlfMNrD+YeOs3D+nd1cEfBOnW7yfO3IaWpc=</pan>
+  <dados-pedido>
+    <numero>4</numero>
+    <valor>127500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-16T17:13:39.177-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-16T17:13:39.186-03:00</data-hora>
+    <valor>127500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transa��o autorizada</mensagem>
+    <data-hora>2013-09-16T17:13:39.192-03:00</data-hora>
+    <valor>127500</valor>
+    <lr>00</lr>
+    <arp>123456</arp>
+    <nsu>564616</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2013-09-16T17:13:39.282-03:00</data-hora>
+    <valor>127500</valor>
+  </captura>
+</transacao>
+
+
+***********************************************
+2013-09-17 11:32:54:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="840b10eb203c6be867b2249ca1a77b9e" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-17 11:32:55:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="840b10eb203c6be867b2249ca1a77b9e" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306908A4FB1001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-17 11:32:55:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="14551c5d5d5d8e6d96ba49e20b6eeab9" versao ="1.2.0">
+<tid>100699306908A4FB1001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>4012001038443335</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>asdasd</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>5</numero>
+      <valor>22500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-17T11:32:55</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-17 11:32:56:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="14551c5d5d5d8e6d96ba49e20b6eeab9" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306908A4FB1001</tid>
+  <pan>5UeSVNFr1L76SHYZclDdTlr3Ax2Z84mstUQoXbV9AE0=</pan>
+  <dados-pedido>
+    <numero>5</numero>
+    <valor>22500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-17T11:34:26.379-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-17T11:34:26.386-03:00</data-hora>
+    <valor>22500</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transa��o autorizada</mensagem>
+    <data-hora>2013-09-17T11:34:26.390-03:00</data-hora>
+    <valor>22500</valor>
+    <lr>00</lr>
+    <arp>123456</arp>
+    <nsu>566523</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2013-09-17T11:34:26.489-03:00</data-hora>
+    <valor>22500</valor>
+  </captura>
+</transacao>
+
+
+***********************************************
+2013-09-17 11:37:52:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="2f61618083a4a2a316211c79657979d3" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-17 11:37:53:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="2f61618083a4a2a316211c79657979d3" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306908A50D1001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-17 11:37:53:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="1f8a34620fde0a66abd67d672dce0d30" versao ="1.2.0">
+<tid>100699306908A50D1001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>4012001038443335</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>asdasd</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>6</numero>
+      <valor>22500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-17T11:37:53</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-17 11:37:54:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="1f8a34620fde0a66abd67d672dce0d30" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306908A50D1001</tid>
+  <pan>5UeSVNFr1L76SHYZclDdTlr3Ax2Z84mstUQoXbV9AE0=</pan>
+  <dados-pedido>
+    <numero>6</numero>
+    <valor>22500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-17T11:39:24.023-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-17T11:39:24.030-03:00</data-hora>
+    <valor>22500</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transa��o autorizada</mensagem>
+    <data-hora>2013-09-17T11:39:24.052-03:00</data-hora>
+    <valor>22500</valor>
+    <lr>00</lr>
+    <arp>123456</arp>
+    <nsu>566541</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2013-09-17T11:39:24.410-03:00</data-hora>
+    <valor>22500</valor>
+  </captura>
+</transacao>
+
+
+***********************************************
+2013-09-25 11:45:51:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="fddb9ee19a9e6f56e3b20991bda5dc5e" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-25 11:45:51:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="fddb9ee19a9e6f56e3b20991bda5dc5e" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306909572D1001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-25 11:45:52:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="173598d9cb24ece3310873f40ac55fd2" versao ="1.2.0">
+<tid>100699306909572D1001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>4012001038443335</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>Kenji</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>21</numero>
+      <valor>22500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-25T11:45:52</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-25 11:46:16:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="173598d9cb24ece3310873f40ac55fd2" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306909572D1001</tid>
+  <pan>5UeSVNFr1L76SHYZclDdTlr3Ax2Z84mstUQoXbV9AE0=</pan>
+  <dados-pedido>
+    <numero>21</numero>
+    <valor>22500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-25T11:47:29.091-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-25T11:47:29.096-03:00</data-hora>
+    <valor>22500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autoriza��o negada</mensagem>
+    <data-hora>2013-09-25T11:47:52.620-03:00</data-hora>
+    <valor>22500</valor>
+    <lr>999</lr>
+    <nsu>612141</nsu>
+  </autorizacao>
+</transacao>
+
+
+***********************************************
+2013-09-25 11:46:54:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="293df87bf9333893e0f6e77eb1cebeec" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-25 11:46:56:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="293df87bf9333893e0f6e77eb1cebeec" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306909572F1001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-25 11:46:57:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="9829126835a9d243d527ef9f8edc3597" versao ="1.2.0">
+<tid>100699306909572F1001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>4012001038443335</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>Kenji</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>22</numero>
+      <valor>22500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-25T11:46:57</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-25 11:47:20:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="9829126835a9d243d527ef9f8edc3597" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306909572F1001</tid>
+  <pan>5UeSVNFr1L76SHYZclDdTlr3Ax2Z84mstUQoXbV9AE0=</pan>
+  <dados-pedido>
+    <numero>22</numero>
+    <valor>22500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-25T11:48:34.015-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-25T11:48:34.021-03:00</data-hora>
+    <valor>22500</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autoriza��o negada</mensagem>
+    <data-hora>2013-09-25T11:48:57.531-03:00</data-hora>
+    <valor>22500</valor>
+    <lr>999</lr>
+    <nsu>612143</nsu>
+  </autorizacao>
+</transacao>
+
+
+***********************************************
+2013-09-25 12:01:40:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="ad7b195594446b19a66fc379640fc4f0" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-25 12:01:41:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="ad7b195594446b19a66fc379640fc4f0" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10069930690957501001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-25 12:01:41:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="69a29ee2d1d460b97a5db8e7520f0b35" versao ="1.2.0">
+<tid>10069930690957501001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>5453010000066167</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>Kenji</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>23</numero>
+      <valor>22500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-25T12:01:41</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-25 12:02:05:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="69a29ee2d1d460b97a5db8e7520f0b35" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10069930690957501001</tid>
+  <pan>b1SQ6jpKCDt3n9C0dgD/ZkPQ1Bh+7aJESqr/CwP64P0=</pan>
+  <dados-pedido>
+    <numero>23</numero>
+    <valor>22500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-25T12:03:17.887-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-25T12:03:17.896-03:00</data-hora>
+    <valor>22500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autoriza��o negada</mensagem>
+    <data-hora>2013-09-25T12:03:41.410-03:00</data-hora>
+    <valor>22500</valor>
+    <lr>999</lr>
+    <nsu>612176</nsu>
+  </autorizacao>
+</transacao>
+
+
+***********************************************
+2013-09-25 12:04:23:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="14caae7c4aa14093abe73b602c3c1aa4" versao ="1.2.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-09-25 12:04:24:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Requisicao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<retorno-tid id="14caae7c4aa14093abe73b602c3c1aa4" versao="1.2.0" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10069930690957561001</tid>
+</retorno-tid>
+
+
+***********************************************
+2013-09-25 12:04:24:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-portador id="0bf734435ade1ea1b2321453905069e7" versao ="1.2.0">
+<tid>10069930690957561001</tid>
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <dados-cartao>
+      <numero>5453010000066167</numero>
+      <validade>201805</validade>
+      <indicador>1</indicador>
+      <codigo-seguranca>123</codigo-seguranca>
+      <nome-portador>asdasd</nome-portador>
+   </dados-cartao>
+   <dados-pedido>
+      <numero>24</numero>
+      <valor>22500</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-09-25T12:04:24</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>mastercard</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <capturar-automaticamente>1</capturar-automaticamente>
+</requisicao-autorizacao-portador>
+
+***********************************************
+2013-09-25 12:04:47:000000 (BRT)
+DO ARQUIVO: /pagamento
+OPERAÇÃO: Autorizacao Portador
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.2.0" id="0bf734435ade1ea1b2321453905069e7" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10069930690957561001</tid>
+  <pan>b1SQ6jpKCDt3n9C0dgD/ZkPQ1Bh+7aJESqr/CwP64P0=</pan>
+  <dados-pedido>
+    <numero>24</numero>
+    <valor>22500</valor>
+    <moeda>986</moeda>
+    <data-hora>2013-09-25T12:06:00.872-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>5</status>
+  <autenticacao>
+    <codigo>5</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2013-09-25T12:06:00.880-03:00</data-hora>
+    <valor>22500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>5</codigo>
+    <mensagem>Autoriza��o negada</mensagem>
+    <data-hora>2013-09-25T12:06:24.408-03:00</data-hora>
+    <valor>22500</valor>
+    <lr>999</lr>
+    <nsu>612182</nsu>
+  </autorizacao>
+</transacao>
+
+

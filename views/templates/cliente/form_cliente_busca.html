@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {$head}
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                {include file="comuns/navegacao.tpl"}
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <div class="well sidebar-nav">
+                        {include file="comuns/menu_lateral.tpl"}
+                    </div><!--/.well -->
+                </div><!--/span-->
+
+                <div class="span9">
+                    <!--conteudo-->
+
+      <div class="painel_basico">
+        <div class="titulos_paginas" id="cliente">
+          <h2>Clientes</h2>
+        </div> 
+        <div>    
+          <div class="clear"></div>
+          <fieldset>
+            <legend>Buscar</legend>
+            <input type="text" name="colaborador_busca_texto" id="cliente_busca_texto" value="fa"/>
+            <input type="button" class="btn_padrao" value="buscar" 
+                   id="btn_cliente_buscar" 
+                   name="btn_cliente_buscar"
+                   onclick="busca_cliente()"/>
+          </fieldset>
+        </div> 
+        <div class="clear"></div>
+        <div class="alinha_esquerda">              
+          <a href="cliente/novo_cliente" class="btn btn-default">Novo Cliente</a>
+          
+        </div>
+        <div id="grid_resultados" class="box_resultados_100">    
+          <div class="clear"></div>
+          <table id="lista_retorno" name="lista_retorno" class="basicTable">
+            <thead>
+              <tr>
+                <th>cod</th>
+                <th>nome</th>
+                <th>Ação</th>
+              </tr>
+            </thead>      
+            <tbody>
+              {include file="cliente/grid_cliente.tpl" cliente_lista=$cliente_lista}
+            </tbody>      
+          </table>
+        </div>
+        <div class="clear"></div>
+      </div>
+   <!--fim do conteudo-->
+                </div><!--/span-->
+            </div><!--/row-->
+
+            <hr>
+            {$rodape}
+        </div><!--/.fluid-container-->
+    </body>
+</html>
